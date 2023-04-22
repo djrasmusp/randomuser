@@ -1,0 +1,62 @@
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 400;
+  src: local(""), url(../fonts/Inter-Italic.woff) format("woff2"), url(../fonts/Inter-Italic.woff) format("woff")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url(../fonts/Inter-Regular.woff2) format("woff2"), url(../fonts/Inter-Regular.woff) format("woff")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 500;
+  src: local(""), url(../fonts/Inter-MediumItalic.woff) format("woff2"), url(../fonts/Inter-MediumItalic.woff) format("woff")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url(../fonts/Inter-Medium.woff2) format("woff2"), url(../fonts/Inter-Medium.woff) format("woff")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 700;
+  src: local(""), url(../fonts/Inter-BoldItalic.woff) format("woff2"), url(../fonts/Inter-BoldItalic.woff) format("woff")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url(../fonts/Inter-Bold.woff2) format("woff2"), url(../fonts/Inter-Bold.woff) format("woff")
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.users:has(a:hover) a:not(:hover) div img,
+.users:has(a:focus) a:not(:focus) div img {
+  @apply transition ease-secondary duration-1000 contrast-50 blur-sm;
+}
+
+@layer base {
+  html, body {
+    scroll-behavior: smooth;
+  }
+}
