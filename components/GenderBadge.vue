@@ -44,10 +44,10 @@ export default {
 
 <style scoped>
 .male {
-  @apply bg-gradient-to-t from-blue-100 to-blue-50 text-blue-800 fill-blue-800;
+  @apply bg-blue-100 bg-gradient-to-t from-blue-100 to-blue-50 text-blue-800 fill-blue-800;
 }
 
 .female {
-  @apply bg-gradient-to-t from-rose-100 to-rose-50 text-rose-800 fill-rose-800;
+  @apply bg-rose-100 bg-gradient-to-t from-rose-100 to-rose-50 text-rose-800 fill-rose-800;
 }
 </style>
