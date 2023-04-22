@@ -1,5 +1,5 @@
 <template>
-  <h2 class="relative inline-block w-auto font-medium text-slate-900 group-hover" :id="key">{{ name.first }} {{ name.last}}</h2>
+  <h2 class="relative inline-block w-auto font-medium text-slate-900 group-hover" :id="id">{{ name.first }} {{ name.last}}</h2>
 </template>
 
 <script>
@@ -7,7 +7,8 @@ export default {
   name: "UsersName",
 
   props : {
-    name : Object
+    name : Object,
+    id : String
   }
 }
 </script>

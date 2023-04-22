@@ -14,7 +14,7 @@
   </header>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from "vue";
 import InlineSvg from 'vue-inline-svg';
 import {mapActions, mapState} from 'vuex';
@@ -41,10 +41,10 @@ export default Vue.extend({
   },
 
   computed: {
-    Logo(): String {
+    Logo() {
       return require('~/static/icons/logo.svg')
     },
-    Arrow(): String {
+    Arrow() {
       return require('~/static/icons/arrow-left.svg')
     },
   }
