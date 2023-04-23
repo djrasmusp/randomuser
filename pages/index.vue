@@ -1,12 +1,13 @@
 <template>
   <div>
     <navigation :hide-btn="true"></navigation>
-    <div class="container mt-8 mb-16">
+    <div class="container mt-8 mb-8">
       <h1 class="font-bold uppercase text-4xl relative inline-block mb-8 text-slate-900">Random Users</h1>
-      <span class="float-right text-sm">page {{ this.page }} of &infin;</span>
+      <pagination class="mb-6 px-0 lg:justify-end"></pagination>
       <Users :users="this.users"/>
     </div>
     <pagination></pagination>
+    <Footer></Footer>
   </div>
 </template>
 

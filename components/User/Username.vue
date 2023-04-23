@@ -1,6 +1,6 @@
 <template>
   <div class="flex gap-x-4 items-center">
-    <inline-svg :src="svgPath" class="h-4 w-4 fill-slate-400 "></inline-svg>
+    <inline-svg :src="userIcon" class="h-4 w-4 fill-slate-400 "></inline-svg>
     <span class="text-slate-700 lg:text-sm leading-relaxed">{{ username }}</span>
   </div>
 </template>
@@ -23,7 +23,7 @@ export default {
   },
 
   computed: {
-    svgPath(): String {
+    userIcon(): String {
       return require('~/static/icons/user.svg')
     },
   }
