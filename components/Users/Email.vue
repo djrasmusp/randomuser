@@ -32,6 +32,6 @@ export default {
 
 <style scoped>
   span {
-    mask-image: linear-gradient(90deg, transparent, #000 0%, #000 90%, transparent 100%);
+    mask-image: linear-gradient(90deg, #000 0%, #000 90%, transparent 100%);
   }
 </style>

@@ -5,7 +5,8 @@
         <inline-svg :src="Logo" class="h-8 w-8 fill-slate-100" title="Random Users"></inline-svg>
         <span class="uppercase font-xl font-bold text-slate-100 tracking-widest">Random Users</span>
       </button>
-      <button class="px-4 bg-slate-100 rounded-lg flex gap-x-2 items-center group outline-offset-4" @click="goBack" :class="[hideBtn ? 'hidden' :  '']" >
+      <button class="px-4 bg-slate-100 rounded-lg flex gap-x-2 items-center group outline-offset-4" @click="goBack"
+              :class="[hideBtn ? 'hidden' :  '']">
         <inline-svg :src="Arrow" class="group-hover:animate-bounce group-focus:animate-bounce w-3 h-3"
                     aria-hidden="true"></inline-svg>
         <span class="text-xs uppercase font-bold">Go Back</span>
@@ -22,8 +23,8 @@ import {mapActions, mapState} from 'vuex';
 export default Vue.extend({
   name: "Navigation",
 
-  props : {
-    hideBtn : {
+  props: {
+    hideBtn: {
       type: Boolean
     }
   },

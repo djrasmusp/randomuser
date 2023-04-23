@@ -30,15 +30,6 @@ export default {
 
   target : 'static',
 
-  routers: {
-    routes: [
-      {
-        path: '/page/:page',
-        component: '~/index.vue',
-      },
-      ]
-  },
-
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/typescript
@@ -53,12 +44,18 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     postcss: {
-      postcssOptions: {
-        plugins: {
-          tailwindcss: {},
-          autoprefixer: {},
-        },
-      },
-    },
-  }
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+        // Add postcss-polyfill as a plugin
+        'postcss-polyfill': {
+          features: {
+            'custom-properties': true,
+            'nesting-rules': true,
+            'postcss-selector-not': true,
+          }
+        }
+      }
+    }
+  },
 }

@@ -50,11 +50,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.users:has(a:hover) a:not(:hover) div img,
-.users:has(a:focus) a:not(:focus) div img {
-  @apply transition ease-secondary duration-1000 contrast-50 blur-sm;
-}
-
 @layer base {
   html, body {
     scroll-behavior: smooth;
